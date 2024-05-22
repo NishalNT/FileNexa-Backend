@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Nishal\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add .env
+
+PATH: 
+  C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Python312\Scripts\;C:\Python312\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\MinGW\bin;C:\Program Files\mongosh-1.9.0-win32-x64\bin;C:\Program Files\Java\jdk-19;C:\Users\Nishal\Downloads\ngrok-v3-stable-windows-amd64.zip;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;E:\Cmake\bin;C:\Python312;C:\Users\Nishal\AppData\Local\Programs\Python\Launcher\;C:\OrCAD\OrCAD_16.5_Lite\tools\pcb\bin;C:\OrCAD\OrCAD_16.5_Lite\tools\fet\bin;C:\OrCAD\OrCAD_16.5_Lite\OpenAccess\bin\win32\opt;C:\OrCAD\OrCAD_16.5_Lite\tools\bin;C:\OrCAD\OrCAD_16.5_Lite\tools\Capture;C:\OrCAD\OrCAD_16.5_Lite\tools\PSpice\Library;C:\OrCAD\OrCAD_16.5_Lite\tools\PSpice;C:\Users\Nishal\AppData\Local\Microsoft\WindowsApps;C:\Users\Nishal\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Program Files\MongoDB\Server\6.0\bin;C:\Program Files\JetBrains\DataSpell 2023.1.2\bin;;C:\Program Files\Java\jdk-19;C:\Program Files\Java\jdk-20\bin;C:\Users\Nishal\Downloads\ngrok-v3-stable-windows-amd64.zip;C:\Program Files\heroku\bin;C:\Users\Nishal\AppData\Roaming\Composer\vendor\bin;C:\Users\Nishal\AppData\Roaming\npm;E:\PyCharm Community Edition 2023.3.2\bin;;E:\LaTex\MiTex\miktex\bin\x64\;C:\Users\Nishal\AppData\Local\Programs\Ollama;E:\Conda\Library\bin\;E:\Conda\Scripts\;E:\Conda\condabin\
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  21.4.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/.env: Not found
+      at params.callback [as _callback] (C:\Users\Nishal\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\Nishal\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:519:28)
+      at Request.<anonymous> (C:\Users\Nishal\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:519:28)
+      at IncomingMessage.<anonymous> (C:\Users\Nishal\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:633:28)
+      at IncomingMessage.emit (node:events:531:35)
+      at endReadableNT (node:internal/streams/readable:1696:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "file-sharer",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "nodemon server.js",
+      "serve": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.19.2",
+      "mongoose": "^8.4.0"
+    },
+    "devDependencies": {
+      "nodemon": "^3.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
