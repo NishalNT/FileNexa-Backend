@@ -9,11 +9,21 @@ const PORT = process.env.PORT || 3000;
 
 const connectDB = require("./config/db");
 
+const cors = require("cors");
+
 app.use(express.static("public"));
 
 app.use(express.json());
 
+
 connectDB();
+
+//CORS
+const corsOptions = {
+    origin: process.env.split(',')
+}
+
+app.use(cors(corsOptions));
 
 //Template is ejs
 app.set("views", path.join(__dirname, "/views"));
