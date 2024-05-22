@@ -3,8 +3,8 @@
 # Clone
 Clone the repo by the command
 
-'''bash
+```bash
 
 git clone https://github.com/NishalNT/FileShare.git
 
-'''
+```
