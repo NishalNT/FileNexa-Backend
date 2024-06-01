@@ -13,12 +13,13 @@ async function sendMail({ from, to, subject, text, html }) {
   });
 
   let info = await transporter.sendMail({
-    from: `FileShare <${from}>`,
+    from: `FileNexa <${from}>`,
     to: to,
     subject: subject,
     text: text,
     html: html
   });
+  console.log(info);
 }
 
 module.exports = sendMail;

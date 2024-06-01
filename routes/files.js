@@ -48,6 +48,8 @@ router.post("/", (req, res) => {
 router.post("/send", async (req, res) => {
     const { uuid, emailTo, emailFrom } = req.body;
 
+    // console.log(req.body);
+
     if(!uuid || !emailTo || !emailFrom){
         return res.status(422).send({ error: "All Fields are required." });
     }
