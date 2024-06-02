@@ -11,7 +11,7 @@ https://github.com/NishalNT/FileNexa-Backend.git
 # Steps to run
 
 1. Clone the Repo
-2. Add a .env file with the following contents
+2. Add a `.env` file with the following contents
 ```bash
 
 MONGODB_CONNECTION_URL = "Your mongodb link"
