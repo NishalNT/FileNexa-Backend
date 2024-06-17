@@ -2,7 +2,6 @@ require("dotenv").config();
 const path = require("path");
 
 const express = require("express");
-
 const app = express();
 
 const PORT = process.env.PORT || 4000;
@@ -10,6 +9,7 @@ const PORT = process.env.PORT || 4000;
 const connectDB = require("./config/db");
 
 const cors = require("cors");
+const router = require("./routes/files");
 
 app.use(express.static("public"));
 
@@ -37,3 +37,5 @@ app.use("/files/download", require("./routes/download"));
 app.listen(PORT, () => {
   console.log(`Listening port: ${PORT}`);
 });
+
+
