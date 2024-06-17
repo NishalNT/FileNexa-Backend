@@ -4,12 +4,7 @@ const mongoose = require("mongoose");
 
 function connectDB() {
     //Database connection
-    mongoose.connect(process.env.MONGODB_CONNECTION_URL, {
-        useNewUrlParser: true,
-        // useCreateIndex: true,
-        useUnifiedTopology: true,
-        // useFindAndModify: true
-    })
+    mongoose.connect(process.env.MONGODB_CONNECTION_URL)
     .then((response) => {
         console.log("Connected to database")
     })

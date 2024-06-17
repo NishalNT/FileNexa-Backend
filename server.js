@@ -17,11 +17,11 @@ app.use(express.json());
 
 connectDB();
 
-//CORS
-
+// CORS
 app.use(
   cors({
-    origin: process.env.ALLOWED_CLIENTS.split(','),
+    origin: 'http://localhost:3000',
+    credentials: true // Allow cookies and authorization headers
   })
 );
 
