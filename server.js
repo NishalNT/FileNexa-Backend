@@ -18,7 +18,7 @@ connectDB();
 // CORS
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://file-nexa-frontend.vercel.app/',
     credentials: true // Allow cookies and authorization headers
   })
 );
