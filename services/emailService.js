@@ -1,14 +1,18 @@
 const nodemailer = require("nodemailer");
-require("dotenv").config();
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+const { SMTP_HOST, SMTP_PORT, MAIL_USER, MAIL_PASSWORD } = process.env;
 
 async function sendMail({ from, to, subject, text, html }) {
   let transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: process.env.SMTP_PORT,
-    secure: false,
+    host: SMTP_HOST,
+    port: SMTP_PORT,
+    secure: false, // false for TLS - as you are using port 587
     auth: {
-      user: process.env.MAIL_USER,
-      pass: process.env.MAIL_PASSWORD,
+      user: MAIL_USER,
+      pass: MAIL_PASSWORD,
     },
   });
 
@@ -17,7 +21,7 @@ async function sendMail({ from, to, subject, text, html }) {
     to: to,
     subject: subject,
     text: text,
-    html: html
+    html: html,
   });
   console.log(info);
 }

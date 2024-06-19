@@ -8,13 +8,11 @@ const PORT = process.env.PORT || 4000;
 
 const connectDB = require("./config/db");
 
+// const router = require("./routes/files");
 const cors = require("cors");
-const router = require("./routes/files");
-
 app.use(express.static("public"));
-
 app.use(express.json());
-
+app.use(express.urlencoded({ extended: true }));
 connectDB();
 
 // CORS
@@ -28,6 +26,8 @@ app.use(
 //Template is ejs
 app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "ejs");
+
+
 
 //Routes
 app.use("/api/files", require("./routes/files"));
