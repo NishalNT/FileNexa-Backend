@@ -10,12 +10,13 @@
 </head>
 
 <body>
-    <img src="/img/logo.png" alt="Inshare logo" class="logo">
+    <img src="/img/logo.png" alt="FileNexa logo" class="logo">
 
     <section class="download">
-        <img class="download__icon" src="/img/download-sd.svg" alt="inshare-download">
+        <i class="fa-solid fa-download" style="font-size: 60px; color: #3572EF;"></i>
+        <!-- <img class="download__icon" src="/img/download-icon.png" alt="FileNexa-download"> -->
         <% if(locals.error){ %>
-        <h4><%= locals.error %> 😏</h4>
+        <h4><%= locals.error %></h4>
         <% } else { %>
         <h2>Your file is ready to download</h2>
         <p>Link expires in 24 hours</p>
@@ -31,5 +32,5 @@
 
     
 </body>
-
+<script src="https://kit.fontawesome.com/1373b730aa.js" crossorigin="anonymous"></script>
 </html>
