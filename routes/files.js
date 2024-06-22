@@ -74,7 +74,7 @@ router.post('/send', cors(corsOptions), async (req, res) => {
     sendMail({
       from: emailFrom,
       to: emailTo,
-      subject: 'FileShare',
+      subject: 'FileNexa',
       text: `${emailFrom} shared a file with you.`,
       html: require('../services/emailTemplate')({
         emailFrom,
