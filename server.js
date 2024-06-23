@@ -18,7 +18,7 @@ connectDB();
 // CORS
 app.use(
   cors({
-    origin: 'https://file-nexa-frontend.vercel.app',
+    origin: 'https://filenexa.vercel.app',
     credentials: true // Allow cookies and authorization headers
   })
 );

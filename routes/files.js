@@ -21,7 +21,7 @@ let upload = multer({
 
 // CORS options
 const corsOptions = {
-  origin: 'https://file-nexa-frontend.vercel.app',
+  origin: 'https://filenexa.vercel.app',
   credentials: true,
 };
 
